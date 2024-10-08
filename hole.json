@@ -1,1 +1,14 @@
-{}
+{
+  "bat": {
+    "0.23.0": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08/bat_0.23.0_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08/bat_0.23.0_x86_64-linux-20.04.tar.gz"
+    }
+  },
+  "ripgrep": {
+    "14.0.0": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08/ripgrep_14.0.0_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08/ripgrep_14.0.0_x86_64-linux-20.04.tar.gz"
+    }
+  }
+}
