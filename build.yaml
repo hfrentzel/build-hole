@@ -1,0 +1,26 @@
+envs:
+  - aarch64-linux-22.04
+  - x86_64-linux-20.04
+apps:
+  ripgrep:
+    type: cargo
+    repo: burntsushi/ripgrep
+    exe_name: rg
+    version: 14.0.0
+    package: |
+      cargo build
+      bin="target/debug/rg"
+      mkdir -p $ARCHIVE_DIR/share/man/man1
+      mkdir -p $ARCHIVE_DIR/share/bash-completion/completions
+      $bin --generate man > $ARCHIVE_DIR/share/man/man1/rg.1
+      $bin --generate complete-bash > $ARCHIVE_DIR/share/bash-completion/completions/rg.bash
+  bat:
+    type: cargo
+    repo: sharkdp/bat
+    version: 0.23.0
+    tag: v{version}
+    package: |
+      mkdir -p $ARCHIVE_DIR/share/man/man1
+      mkdir -p $ARCHIVE_DIR/share/bash-completion/completions
+      cp target/$TARGET/release/build/bat-*/out/assets/manual/bat.1 $ARCHIVE_DIR/share/man/man1/bat.1 
+      cp target/$TARGET/release/build/bat-*/out/assets/completions/bat.bash $ARCHIVE_DIR/share/bash-completion/completions/bat.bash
