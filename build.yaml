@@ -2,6 +2,31 @@ envs:
   - aarch64-linux-22.04
   - x86_64-linux-20.04
 apps:
+  bat:
+    type: cargo
+    repo: sharkdp/bat
+    version: 0.23.0
+    tag: v{version}
+    package: |
+      mkdir -p $ARCHIVE_DIR/share/man/man1
+      mkdir -p $ARCHIVE_DIR/share/bash-completion/completions
+      cp target/$TARGET/release/build/bat-*/out/assets/manual/bat.1 $ARCHIVE_DIR/share/man/man1/bat.1 
+      cp target/$TARGET/release/build/bat-*/out/assets/completions/bat.bash $ARCHIVE_DIR/share/bash-completion/completions/bat.bash
+  delta:
+    type: cargo
+    repo: dandavison/delta
+    version: 0.15.1
+  fd:
+    type: cargo
+    repo: sharkdp/fd
+    version: 10.1.0 
+    tag: v{version}
+    package: |
+      mkdir -p $ARCHIVE_DIR/share/man/man1
+      mkdir -p $ARCHIVE_DIR/share/bash-completion/completions
+      make completions
+      cp doc/fd.1 $ARCHIVE_DIR/share/man/man1/fd.1
+      cp autocomplete/fd.bash $ARCHIVE_DIR/share/bash-completion/completions/fd.bash
   ripgrep:
     type: cargo
     repo: burntsushi/ripgrep
@@ -14,13 +39,12 @@ apps:
       mkdir -p $ARCHIVE_DIR/share/bash-completion/completions
       $bin --generate man > $ARCHIVE_DIR/share/man/man1/rg.1
       $bin --generate complete-bash > $ARCHIVE_DIR/share/bash-completion/completions/rg.bash
-  bat:
+  zoxide:
     type: cargo
-    repo: sharkdp/bat
-    version: 0.23.0
+    repo: ajeetdsouza/zoxide
+    version: 0.9.0
     tag: v{version}
     package: |
-      mkdir -p $ARCHIVE_DIR/share/man/man1
-      mkdir -p $ARCHIVE_DIR/share/bash-completion/completions
-      cp target/$TARGET/release/build/bat-*/out/assets/manual/bat.1 $ARCHIVE_DIR/share/man/man1/bat.1 
-      cp target/$TARGET/release/build/bat-*/out/assets/completions/bat.bash $ARCHIVE_DIR/share/bash-completion/completions/bat.bash
+      mkdir -p $ARCHIVE_DIR/share/bash-completion/completions 
+      cp -r man/ $ARCHIVE_DIR/share
+      cp contrib/completions/zoxide.bash $ARCHIVE_DIR/share/bash-completion/completions/zoxide.bash
