@@ -24,7 +24,6 @@ def add_to_missing(name, spec, env):
         "type": spec["type"],
         "repo": spec["repo"],
         "version": spec["version"],
-        "tag": spec.get("tag"),
         "env": env,
         "runner": runner,
         "target": target,
@@ -35,6 +34,8 @@ def add_to_missing(name, spec, env):
         missing_spec["package"] = spec["package"]
     if spec.get("tag"):
         missing_spec["tag"] = spec["tag"].format(version=spec["version"])
+    if spec.get("flags"):
+        missing_spec["flags"] = spec["flags"]
 
     missing.append(missing_spec)
 

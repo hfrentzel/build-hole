@@ -50,7 +50,7 @@ jobs:
           CARGO_PROFILE_RELEASE_STRIP: symbols
           CARGO_PROFILE_RELEASE_LTO: true
         run: |
-          cross build --release --target=${{ matrix.target }}
+          cross build --release --target=${{ matrix.target }} ${{ matrix.flags }}
           mkdir -p $ARCHIVE_DIR/bin/
           cp target/${{ matrix.target }}/release/${{ matrix.exe_name || matrix.name }} \
             $ARCHIVE_DIR/bin/
