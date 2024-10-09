@@ -27,6 +27,15 @@ apps:
       make completions
       cp doc/fd.1 $ARCHIVE_DIR/share/man/man1/fd.1
       cp autocomplete/fd.bash $ARCHIVE_DIR/share/bash-completion/completions/fd.bash
+  fzf:
+    type: go
+    repo: junegunn/fzf
+    version: 0.39.0
+    package: |
+      mkdir $ARCHIVE_DIR/share
+      mkdir $ARCHIVE_DIR/shell
+      cp -r man/ $ARCHIVE_DIR/share
+      cp shell/completion.bash $ARCHIVE_DIR/shell/fzf.sh
   ripgrep:
     type: cargo
     repo: burntsushi/ripgrep
@@ -50,6 +59,20 @@ apps:
     repo: johnnymorganz/stylua
     version: 0.20.0
     tag: v{version}
+  yq:
+    type: go
+    repo: mikefarah/yq
+    version: 4.40.4
+    tag: v{version}
+    package: |
+      sudo apt install pandoc -y
+      mkdir -p $ARCHIVE_DIR/share/man/man1
+      ./scripts/generate-man-page-md.sh
+      pandoc --standalone --to man --variable=title:"YQ" \
+            --variable=section:"1" \
+            --variable=header:"yq (https://github.com/mikefarah/yq/) version $VERSION" \
+            --variable=author:"Mike Farah" \
+            --output=$ARCHIVE_DIR/share/man/man1/yq.1
   zoxide:
     type: cargo
     repo: ajeetdsouza/zoxide
