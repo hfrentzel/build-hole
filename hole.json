@@ -28,5 +28,17 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08T2342/zoxide_0.9.0_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08T2342/zoxide_0.9.0_x86_64-linux-20.04.tar.gz"
     }
+  },
+  "selene": {
+    "0.27.1": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T0011/selene_0.27.1_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T0011/selene_0.27.1_x86_64-linux-20.04.tar.gz"
+    }
+  },
+  "stylua": {
+    "0.20.0": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T0011/stylua_0.20.0_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T0011/stylua_0.20.0_x86_64-linux-20.04.tar.gz"
+    }
   }
 }
