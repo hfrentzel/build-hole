@@ -40,5 +40,17 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T0011/stylua_0.20.0_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T0011/stylua_0.20.0_x86_64-linux-20.04.tar.gz"
     }
+  },
+  "fzf": {
+    "0.39.0": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T1706/fzf_0.39.0_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T1706/fzf_0.39.0_x86_64-linux-20.04.tar.gz"
+    }
+  },
+  "yq": {
+    "4.40.4": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T1706/yq_4.40.4_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T1706/yq_4.40.4_x86_64-linux-20.04.tar.gz"
+    }
   }
 }
