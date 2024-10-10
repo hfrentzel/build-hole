@@ -13,6 +13,9 @@ missing = []
 
 
 def add_to_missing(name, spec, env):
+    if env in spec.get("exclude", []):
+        return
+
     missing_spec = {
         "name": name,
         "type": spec["type"],

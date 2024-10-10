@@ -59,6 +59,20 @@ apps:
     repo: johnnymorganz/stylua
     version: 0.20.0
     tag: v{version}
+  tmux:
+    type: custom
+    repo: tmux/tmux
+    version: '3.3'
+    exclude: ['aarch64-linux-22.04']
+    package: |
+      sudo apt install -y libevent-dev ncurses-dev build-essential bison \
+        pkg-config autoconf automake
+      sh autogen.sh
+      ./configure
+      make
+      cp tmux $ARCHIVE_DIR/bin
+      mkdir -p $ARCHIVE_DIR/share/man/man1
+      cp tmux.1 $ARCHIVE_DIR/share/man/man1
   yq:
     type: go
     repo: mikefarah/yq
