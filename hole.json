@@ -52,5 +52,10 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T1706/yq_4.40.4_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T1706/yq_4.40.4_x86_64-linux-20.04.tar.gz"
     }
+  },
+  "tmux": {
+    "3.3": {
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-10T1735/tmux_3.3_x86_64-linux-20.04.tar.gz"
+    }
   }
 }
