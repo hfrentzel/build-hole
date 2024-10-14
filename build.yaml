@@ -5,7 +5,7 @@ apps:
   bat:
     type: cargo
     repo: sharkdp/bat
-    version: 0.23.0
+    version: 0.24.0
     tag: v{version}
     package: |
       mkdir -p $ARCHIVE_DIR/share/man/man1
@@ -15,11 +15,11 @@ apps:
   delta:
     type: cargo
     repo: dandavison/delta
-    version: 0.15.1
+    version: 0.18.2
   fd:
     type: cargo
     repo: sharkdp/fd
-    version: 10.1.0 
+    version: 10.2.0 
     tag: v{version}
     package: |
       mkdir -p $ARCHIVE_DIR/share/man/man1
@@ -51,7 +51,7 @@ apps:
   ripgrep:
     type: cargo
     repo: burntsushi/ripgrep
-    version: 14.0.0
+    version: 14.1.1
     exe_name: rg
     flags: --features=pcre2
     package: |
@@ -102,7 +102,7 @@ apps:
   zoxide:
     type: cargo
     repo: ajeetdsouza/zoxide
-    version: 0.9.0
+    version: 0.9.6
     tag: v{version}
     package: |
       mkdir -p $ARCHIVE_DIR/share/bash-completion/completions 

@@ -49,19 +49,19 @@ jobs:
           args: build --single-target -o ${{ env.ARCHIVE_DIR }}/bin/${{ matrix.name }} --id ${{ matrix.name }}
 
       - name: Install rust toolchain
-        if: ${{ matrix.type == 'rust' }}
+        if: ${{ matrix.type == 'cargo' }}
         uses: dtolnay/rust-toolchain@stable
         with:
           targets: ${{ matrix.target }}
 
       - name: Install cross
-        if: ${{ matrix.type == 'rust' }}
+        if: ${{ matrix.type == 'cargo' }}
         uses: taiki-e/install-action@v2
         with:
           tool: cross
 
       - name: Build Rust Binary
-        if: ${{ matrix.type == 'rust' }}
+        if: ${{ matrix.type == 'cargo' }}
         shell: bash
         env: 
           CARGO_PROFILE_RELEASE_DEBUG: 0
