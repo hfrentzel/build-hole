@@ -3,30 +3,50 @@
     "0.23.0": {
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08/bat_0.23.0_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08/bat_0.23.0_x86_64-linux-20.04.tar.gz"
+    },
+    "0.24.0": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/bat_0.24.0_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/bat_0.24.0_x86_64-linux-20.04.tar.gz"
     }
   },
   "ripgrep": {
     "14.0.0": {
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08/ripgrep_14.0.0_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08/ripgrep_14.0.0_x86_64-linux-20.04.tar.gz"
+    },
+    "14.1.1": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/ripgrep_14.1.1_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/ripgrep_14.1.1_x86_64-linux-20.04.tar.gz"
     }
   },
   "delta": {
     "0.15.1": {
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08T2342/delta_0.15.1_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08T2342/delta_0.15.1_x86_64-linux-20.04.tar.gz"
+    },
+    "0.18.2": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/delta_0.18.2_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/delta_0.18.2_x86_64-linux-20.04.tar.gz"
     }
   },
   "fd": {
     "10.1.0": {
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08T2342/fd_10.1.0_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08T2342/fd_10.1.0_x86_64-linux-20.04.tar.gz"
+    },
+    "10.2.0": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/fd_10.2.0_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/fd_10.2.0_x86_64-linux-20.04.tar.gz"
     }
   },
   "zoxide": {
     "0.9.0": {
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08T2342/zoxide_0.9.0_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-08T2342/zoxide_0.9.0_x86_64-linux-20.04.tar.gz"
+    },
+    "0.9.6": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/zoxide_0.9.6_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/zoxide_0.9.6_x86_64-linux-20.04.tar.gz"
     }
   },
   "selene": {
