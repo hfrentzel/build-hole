@@ -5,7 +5,7 @@ apps:
   bat:
     type: cargo
     repo: sharkdp/bat
-    version: 0.24.0
+    version: 0.25.0
     tag: v{version}
     package: |
       mkdir -p $ARCHIVE_DIR/share/man/man1
@@ -64,12 +64,12 @@ apps:
   selene:
     type: cargo
     repo: kampfkarren/selene
-    version: 0.27.1
+    version: 0.28.0
     flags: --no-default-features
   stylua:
     type: cargo
     repo: johnnymorganz/stylua
-    version: 0.20.0
+    version: 2.0.2
     tag: v{version}
   tmux:
     type: custom
@@ -88,7 +88,7 @@ apps:
   yq:
     type: go
     repo: mikefarah/yq
-    version: 4.40.4
+    version: 4.45.1
     tag: v{version}
     package: |
       sudo apt install pandoc -y
@@ -102,7 +102,7 @@ apps:
   zoxide:
     type: cargo
     repo: ajeetdsouza/zoxide
-    version: 0.9.6
+    version: 0.9.7
     tag: v{version}
     package: |
       mkdir -p $ARCHIVE_DIR/share/bash-completion/completions 
