@@ -30,7 +30,8 @@ apps:
   fzf:
     type: go
     repo: junegunn/fzf
-    version: 0.39.0
+    version: 0.54.1
+    tag: v{version}
     package: |
       mkdir $ARCHIVE_DIR/share
       mkdir $ARCHIVE_DIR/shell
