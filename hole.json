@@ -81,6 +81,10 @@
     "0.39.0": {
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T1706/fzf_0.39.0_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T1706/fzf_0.39.0_x86_64-linux-20.04.tar.gz"
+    },
+    "0.54.1": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-02-25T1806/fzf_0.54.1_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-02-25T1806/fzf_0.54.1_x86_64-linux-20.04.tar.gz"
     }
   },
   "yq": {
