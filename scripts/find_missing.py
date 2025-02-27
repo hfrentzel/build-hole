@@ -24,7 +24,7 @@ def add_to_missing(name, spec, env):
         "env": env,
     }
     if env == "aarch64-linux-22.04":
-        missing_spec["runner"] = "ubuntu-22.04"
+        missing_spec["runner"] = "ubuntu-22.04-arm"
         if spec["type"] == "cargo":
             missing_spec["target"] = "aarch64-unknown-linux-gnu"
         elif spec["type"] == "go":
@@ -46,6 +46,8 @@ def add_to_missing(name, spec, env):
         missing_spec["tag"] = spec["tag"].format(version=spec["version"])
     if spec.get("flags"):
         missing_spec["flags"] = spec["flags"]
+    if spec.get("entrypoint"):
+        missing_spec["entrypoint"] = spec["entrypoint"]
 
     missing.append(missing_spec)
 
