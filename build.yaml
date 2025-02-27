@@ -37,6 +37,16 @@ apps:
       mkdir $ARCHIVE_DIR/shell
       cp -r man/ $ARCHIVE_DIR/share
       cp shell/completion.bash $ARCHIVE_DIR/shell/fzf.sh
+  jira:
+    type: go
+    repo: ankitpokhrel/jira-cli
+    version: 1.5.2
+    tag: v{version}
+    entrypoint: "./cmd/jira"
+    package: |
+      bin="$ARCHIVE_DIR/bin/jira"
+      mkdir -p $ARCHIVE_DIR/share/bash-completion/completions
+      $bin completion bash > $ARCHIVE_DIR/share/bash-completion/completions/jira.bash
   neovim:
     type: custom
     repo: neovim/neovim
