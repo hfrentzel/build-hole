@@ -40,6 +40,28 @@ apps:
       mkdir $ARCHIVE_DIR/shell
       cp -r man/ $ARCHIVE_DIR/share
       cp shell/completion.bash $ARCHIVE_DIR/shell/fzf.sh
+  golangci-lint:
+    type: go
+    repo: golangci/golangci-lint
+    version: 1.64.6
+    tag: v{version}
+    entrypoint: "./cmd/golangci-lint"
+    flags:
+      - -X main.version={{.Version}}
+      - -X main.commit={{.ShortCommit}}
+      - -X main.date={{.Date}}
+    package: |
+      bin="$ARCHIVE_DIR/bin/golangci-lint"
+      mkdir -p $ARCHIVE_DIR/share/bash-completion/completions
+      $bin completion bash > $ARCHIVE_DIR/share/bash-completion/completions/golangci-lint.bash
+  gopls:
+    type: go
+    repo: golang/tools
+    version: 0.18.1
+    tag: gopls/v{version}
+    working-directory: gopls
+    flags:
+      - -X main.version={{.Version}}
   jira:
     type: go
     repo: ankitpokhrel/jira-cli

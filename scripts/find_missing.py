@@ -51,6 +51,8 @@ def add_to_missing(name, spec, env):
             missing_spec["flags"] = spec["flags"]
     if spec.get("entrypoint"):
         missing_spec["entrypoint"] = spec["entrypoint"]
+    if spec.get("working-directory"):
+        missing_spec["working_dir"] = spec["working-directory"]
 
     missing.append(missing_spec)
 
