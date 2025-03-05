@@ -54,7 +54,7 @@ jobs:
                 - linux_amd64
                 - linux_arm64
               ldflags:
-                - -s -w
+                - -s -w ${{ matrix.flags }}
           EOF
           cat .goreleaser.yml
 

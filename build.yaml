@@ -43,6 +43,10 @@ apps:
     version: 1.5.2
     tag: v{version}
     entrypoint: "./cmd/jira"
+    flags: 
+      - -X github.com/ankitpokhrel/jira-cli/internal/version.Version={{.Version}} 
+      - -X github.com/ankitpokhrel/jira-cli/internal/version.GitCommit={{.FullCommit}} 
+      - -X github.com/ankitpokhrel/jira-cli/internal/version.SourceDateEpoch={{.CommitTimestamp}}
     package: |
       bin="$ARCHIVE_DIR/bin/jira"
       mkdir -p $ARCHIVE_DIR/share/bash-completion/completions
