@@ -115,5 +115,17 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1435/jira_1.5.2_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1435/jira_1.5.2_x86_64-linux-20.04.tar.gz"
     }
+  },
+  "golangci-lint": {
+    "1.64.6": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1812/golangci-lint_1.64.6_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1812/golangci-lint_1.64.6_x86_64-linux-20.04.tar.gz"
+    }
+  },
+  "gopls": {
+    "0.18.1": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1812/gopls_0.18.1_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1812/gopls_0.18.1_x86_64-linux-20.04.tar.gz"
+    }
   }
 }
