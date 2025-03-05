@@ -99,16 +99,16 @@ jobs:
           cp target/${{ matrix.target }}/release/${{ matrix.exe_name || matrix.name }} \
             $ARCHIVE_DIR/bin/
 
-      - name: Verify Binary
-        run: |
-          file $ARCHIVE_DIR/bin/${{ matrix.name }}
-
       - name: Package assets
         if: ${{ matrix.package }}
         env:
           TARGET: ${{ matrix.target }}
           VERSION: ${{ matrix.version }}
         run: ${{ matrix.package }}
+
+      - name: Verify Binary
+        run: |
+          file $ARCHIVE_DIR/bin/${{ matrix.exe_name || matrix.name }}
 
       - name: Bundle tarball
         run: |

@@ -80,9 +80,9 @@ apps:
   neovim:
     type: custom
     repo: neovim/neovim
+    exe_name: nvim
     version: 0.10.2
     tag: v{version}
-    exclude: ['aarch64-linux-22.04']
     package: |
       ./.github/scripts/install_deps.sh
       CMAKE_BUILD_TYPE=Release
@@ -116,7 +116,6 @@ apps:
     type: custom
     repo: tmux/tmux
     version: '3.3'
-    exclude: ['aarch64-linux-22.04']
     package: |
       sudo apt install -y libevent-dev ncurses-dev build-essential bison \
         pkg-config autoconf automake
