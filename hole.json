@@ -91,6 +91,10 @@
     "4.40.4": {
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T1706/yq_4.40.4_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-09T1706/yq_4.40.4_x86_64-linux-20.04.tar.gz"
+    },
+    "4.45.1": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1435/yq_4.45.1_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1435/yq_4.45.1_x86_64-linux-20.04.tar.gz"
     }
   },
   "tmux": {
@@ -104,6 +108,12 @@
     },
     "0.10.2": {
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-31T2008/neovim_0.10.2_x86_64-linux-20.04.tar.gz"
+    }
+  },
+  "jira": {
+    "1.5.2": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1435/jira_1.5.2_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1435/jira_1.5.2_x86_64-linux-20.04.tar.gz"
     }
   }
 }
