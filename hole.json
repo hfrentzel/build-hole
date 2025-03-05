@@ -99,7 +99,8 @@
   },
   "tmux": {
     "3.3": {
-      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-10T1735/tmux_3.3_x86_64-linux-20.04.tar.gz"
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-10T1735/tmux_3.3_x86_64-linux-20.04.tar.gz",
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1935/tmux_3.3_aarch64-linux-22.04.tar.gz"
     }
   },
   "neovim": {
@@ -107,7 +108,8 @@
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-11T2130/neovim_0.9.2_x86_64-linux-20.04.tar.gz"
     },
     "0.10.2": {
-      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-31T2008/neovim_0.10.2_x86_64-linux-20.04.tar.gz"
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-31T2008/neovim_0.10.2_x86_64-linux-20.04.tar.gz",
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1935/neovim_0.10.2_aarch64-linux-22.04.tar.gz"
     }
   },
   "jira": {
