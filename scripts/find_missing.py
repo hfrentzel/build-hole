@@ -45,7 +45,10 @@ def add_to_missing(name, spec, env):
     if spec.get("tag"):
         missing_spec["tag"] = spec["tag"].format(version=spec["version"])
     if spec.get("flags"):
-        missing_spec["flags"] = spec["flags"]
+        if isinstance(spec["flags"], list):
+            missing_spec["flags"] = " ".join(spec["flags"])
+        else:
+            missing_spec["flags"] = spec["flags"]
     if spec.get("entrypoint"):
         missing_spec["entrypoint"] = spec["entrypoint"]
 

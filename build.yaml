@@ -32,6 +32,9 @@ apps:
     repo: junegunn/fzf
     version: 0.54.1
     tag: v{version}
+    flags:
+      - -X main.version={{ .Version }}
+      - -X main.revision={{ .ShortCommit }}
     package: |
       mkdir $ARCHIVE_DIR/share
       mkdir $ARCHIVE_DIR/shell
@@ -43,6 +46,10 @@ apps:
     version: 1.5.2
     tag: v{version}
     entrypoint: "./cmd/jira"
+    flags:
+      - -X github.com/ankitpokhrel/jira-cli/internal/version.Version={{.Version}}
+      - -X github.com/ankitpokhrel/jira-cli/internal/version.GitCommit={{.FullCommit}}
+      - -X github.com/ankitpokhrel/jira-cli/internal/version.SourceDateEpoch={{.CommitTimestamp}}
     package: |
       bin="$ARCHIVE_DIR/bin/jira"
       mkdir -p $ARCHIVE_DIR/share/bash-completion/completions
