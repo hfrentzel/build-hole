@@ -54,6 +54,7 @@ apps:
       bin="$ARCHIVE_DIR/bin/jira"
       mkdir -p $ARCHIVE_DIR/share/bash-completion/completions
       $bin completion bash > $ARCHIVE_DIR/share/bash-completion/completions/jira.bash
+      $bin man --generate --output $ARCHIVE_DIR/share/man/man7/
   neovim:
     type: custom
     repo: neovim/neovim
@@ -116,7 +117,7 @@ apps:
             --variable=section:"1" \
             --variable=header:"yq (https://github.com/mikefarah/yq/) version $VERSION" \
             --variable=author:"Mike Farah" \
-            --output=$ARCHIVE_DIR/share/man/man1/yq.1
+            --output=$ARCHIVE_DIR/share/man/man1/yq.1 man.md
   zoxide:
     type: cargo
     repo: ajeetdsouza/zoxide
