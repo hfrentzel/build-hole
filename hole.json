@@ -129,5 +129,11 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1812/gopls_0.18.1_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1812/gopls_0.18.1_x86_64-linux-20.04.tar.gz"
     }
+  },
+  "lua-language-server": {
+    "3.13.6": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T0313/lua-language-server_3.13.6_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T0313/lua-language-server_3.13.6_x86_64-linux-20.04.tar.gz"
+    }
   }
 }
