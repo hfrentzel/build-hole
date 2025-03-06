@@ -1,6 +1,6 @@
 envs:
   - aarch64-linux-22.04
-  - x86_64-linux-20.04
+  - x86_64-linux-22.04
 apps:
   bat:
     type: cargo

@@ -30,7 +30,7 @@ def add_to_missing(name, spec, env):
         if spec["type"] == "cargo":
             missing_spec["target"] = "aarch64-unknown-linux-gnu"
     else:
-        missing_spec["runner"] = "ubuntu-20.04"
+        missing_spec["runner"] = "ubuntu-22.04"
         missing_spec["goos"] = "linux"
         missing_spec["goarch"] = "amd64"
         if spec["type"] == "cargo":
