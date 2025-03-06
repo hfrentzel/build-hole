@@ -25,18 +25,16 @@ def add_to_missing(name, spec, env):
     }
     if env == "aarch64-linux-22.04":
         missing_spec["runner"] = "ubuntu-22.04-arm"
+        missing_spec["goos"] = "linux"
+        missing_spec["goarch"] = "arm64"
         if spec["type"] == "cargo":
             missing_spec["target"] = "aarch64-unknown-linux-gnu"
-        elif spec["type"] == "go":
-            missing_spec["goos"] = "linux"
-            missing_spec["goarch"] = "arm64"
     else:
         missing_spec["runner"] = "ubuntu-20.04"
+        missing_spec["goos"] = "linux"
+        missing_spec["goarch"] = "amd64"
         if spec["type"] == "cargo":
             missing_spec["target"] = "x86_64-unknown-linux-musl"
-        elif spec["type"] == "go":
-            missing_spec["goos"] = "linux"
-            missing_spec["goarch"] = "amd64"
 
     if spec.get("exe_name"):
         missing_spec["exe_name"] = spec["exe_name"]

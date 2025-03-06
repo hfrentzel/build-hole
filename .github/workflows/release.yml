@@ -22,6 +22,8 @@ jobs:
         working-directory: ${{ matrix.working_dir || '.' }}
     env:
       ARCHIVE_DIR: ${{ matrix.name }}_${{ matrix.version }}_${{ matrix.env }}
+      GOARCH: ${{ matrix.goarch }}
+      GOOS: ${{ matrix.goos }}
     strategy:
       matrix:
         include: ${{ fromJSON(needs.find_missing.outputs.missing)}}
@@ -32,6 +34,7 @@ jobs:
         with: 
           repository: ${{ matrix.repo }}
           ref: ${{matrix.tag || matrix.version}}
+          submodules: recursive
 
       - name: Create archive directory
         run: |
@@ -68,9 +71,6 @@ jobs:
       - name: Build Go Binary
         uses: goreleaser/goreleaser-action@v6
         if: ${{ matrix.type == 'go' }}
-        env:
-          GOARCH: ${{ matrix.goarch }}
-          GOOS: ${{ matrix.goos }}
         with:
           workdir: ${{ matrix.working_dir || '.' }}
           args: build --single-target -o ${{ env.ARCHIVE_DIR }}/bin/${{ matrix.name }} --id ${{ matrix.name }} --skip=validate

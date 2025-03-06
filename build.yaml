@@ -77,6 +77,17 @@ apps:
       mkdir -p $ARCHIVE_DIR/share/bash-completion/completions
       $bin completion bash > $ARCHIVE_DIR/share/bash-completion/completions/jira.bash
       $bin man --generate --output $ARCHIVE_DIR/share/man/man7/
+  lua-language-server:
+    type: custom
+    repo: LuaLS/lua-language-server
+    version: 3.13.6
+    package: |
+      sudo apt install ninja-build
+      PLATFORM=$([ $GOARCH = amd64 ] && echo linux-x64 || echo linux-arm64)
+      ./make.sh $PLATFORM
+      echo -e '#!/bin/bash\nexec "~/.local/share/lua/bin/lua-language-server" "$@"' > $ARCHIVE_DIR/bin/lua-language-server
+      mkdir $ARCHIVE_DIR/lua
+      cp -r main.lua debugger.lua locale meta script bin $ARCHIVE_DIR/lua
   neovim:
     type: custom
     repo: neovim/neovim
