@@ -93,6 +93,10 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-02-25T1806/fzf_0.54.1_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-02-25T1806/fzf_0.54.1_x86_64-linux-20.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/fzf_0.54.1_x86_64-linux-22.04.tar.gz"
+    },
+    "0.61.1": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/fzf_0.61.1_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/fzf_0.61.1_x86_64-linux-22.04.tar.gz"
     }
   },
   "yq": {
@@ -121,6 +125,10 @@
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-31T2008/neovim_0.10.2_x86_64-linux-20.04.tar.gz",
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1935/neovim_0.10.2_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/neovim_0.10.2_x86_64-linux-22.04.tar.gz"
+    },
+    "0.11.0": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/neovim_0.11.0_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/neovim_0.11.0_x86_64-linux-22.04.tar.gz"
     }
   },
   "jira": {
@@ -135,6 +143,10 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1812/golangci-lint_1.64.6_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1812/golangci-lint_1.64.6_x86_64-linux-20.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/golangci-lint_1.64.6_x86_64-linux-22.04.tar.gz"
+    },
+    "2.0.2": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/golangci-lint_2.0.2_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/golangci-lint_2.0.2_x86_64-linux-22.04.tar.gz"
     }
   },
   "gopls": {
@@ -149,6 +161,10 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T0313/lua-language-server_3.13.6_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T0313/lua-language-server_3.13.6_x86_64-linux-20.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/lua-language-server_3.13.6_x86_64-linux-22.04.tar.gz"
+    },
+    "3.14.0": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/lua-language-server_3.14.0_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/lua-language-server_3.14.0_x86_64-linux-22.04.tar.gz"
     }
   }
 }
