@@ -30,7 +30,7 @@ apps:
   fzf:
     type: go
     repo: junegunn/fzf
-    version: 0.54.1
+    version: 0.61.1
     tag: v{version}
     flags:
       - -X main.version={{ .Version }}
@@ -80,7 +80,7 @@ apps:
   lua-language-server:
     type: custom
     repo: LuaLS/lua-language-server
-    version: 3.13.6
+    version: 3.14.0
     package: |
       sudo apt install ninja-build
       PLATFORM=$([ $GOARCH = amd64 ] && echo linux-x64 || echo linux-arm64)
@@ -93,14 +93,15 @@ apps:
     type: custom
     repo: neovim/neovim
     exe_name: nvim
-    version: 0.10.2
+    version: 0.11.0
     tag: v{version}
     package: |
       ./.github/scripts/install_deps.sh
       CMAKE_BUILD_TYPE=Release
+      [[ $(arch) = x86_64 ]] && ARCH="x86_64" || ARCH="arm64"
       ./scripts/genappimage.sh
       cpack --config build/CPackConfig.cmake -G TGZ
-      tar -xzf build/nvim-linux64.tar.gz -C $ARCHIVE_DIR --strip-components 1
+      tar -xzf build/nvim-linux-$ARCH.tar.gz -C $ARCHIVE_DIR --strip-components 1
   ripgrep:
     type: cargo
     repo: burntsushi/ripgrep
