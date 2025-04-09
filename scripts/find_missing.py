@@ -29,12 +29,18 @@ def add_to_missing(name, spec, env):
         missing_spec["goarch"] = "arm64"
         if spec["type"] == "cargo":
             missing_spec["target"] = "aarch64-unknown-linux-gnu"
-    else:
+    elif env == "x86_64-linux-22.04":
         missing_spec["runner"] = "ubuntu-22.04"
         missing_spec["goos"] = "linux"
         missing_spec["goarch"] = "amd64"
         if spec["type"] == "cargo":
             missing_spec["target"] = "x86_64-unknown-linux-musl"
+    else:
+        missing_spec["runner"] = "windows-2022"
+        missing_spec["goos"] = "windows"
+        missing_spec["goarch"] = "amd64"
+        if spec["type"] == "cargo":
+            missing_spec["target"] = "x86_64-pc-windows-msvc"
 
     if spec.get("exe_name"):
         missing_spec["exe_name"] = spec["exe_name"]
@@ -51,6 +57,8 @@ def add_to_missing(name, spec, env):
         missing_spec["entrypoint"] = spec["entrypoint"]
     if spec.get("working-directory"):
         missing_spec["working_dir"] = spec["working-directory"]
+    if spec.get("recurse"):
+        missing_spec["recurse"] = spec["recurse"]
 
     missing.append(missing_spec)
 

@@ -34,9 +34,10 @@ jobs:
         with: 
           repository: ${{ matrix.repo }}
           ref: ${{matrix.tag || matrix.version}}
-          submodules: recursive
+          submodules: ${{ matrix.recurse && 'recursive' || '' }}
 
       - name: Create archive directory
+        shell: bash
         run: |
           git tag -f ${{matrix.version}}
           mkdir -p $ARCHIVE_DIR/bin
@@ -45,10 +46,11 @@ jobs:
         if: ${{ matrix.type == 'go' }}
         uses: actions/setup-go@v5
         with: 
-          go-version: '^1.20'
+          go-version: '^1.23'
 
       - name: Override goreleaser file
         if: ${{ matrix.type == 'go' }}
+        shell: bash
         run: |
           cat <<EOF > .goreleaser.yml
           version: 2
@@ -63,6 +65,7 @@ jobs:
               targets:
                 - linux_amd64
                 - linux_arm64
+                - windows_amd64
               ldflags:
                 - -s -w ${{ matrix.flags }}
           EOF
@@ -101,22 +104,32 @@ jobs:
 
       - name: Package assets
         if: ${{ matrix.package }}
+        shell: bash
         env:
           TARGET: ${{ matrix.target }}
           VERSION: ${{ matrix.version }}
         run: ${{ matrix.package }}
 
       - name: Verify Binary
+        shell: bash
         run: |
-          file $ARCHIVE_DIR/bin/${{ matrix.exe_name || matrix.name }}
+          filename=${{ matrix.exe_name || matrix.name }}
+          if [ ${{ matrix.goos }} == "windows" ]; then
+            if ! [ -f $ARCHIVE_DIR/bin/$filename.exe ]; then
+              mv $ARCHIVE_DIR/bin/$filename $ARCHIVE_DIR/bin/$filename.exe
+            fi
+          fi
+          file $ARCHIVE_DIR/bin/$filename
 
       - name: Bundle tarball
+        shell: bash
         run: |
           tar czf $ARCHIVE_DIR.tar.gz $ARCHIVE_DIR
           tar -tf $ARCHIVE_DIR.tar.gz
 
       - name: Upload tarball
         uses: actions/upload-artifact@v4
+        if: ${{ matrix.os != 'windows-latest' }}
         with:
           name: ${{ env.ARCHIVE_DIR }}.tar.gz
           path: ${{ matrix.working_dir || '.' }}/${{ env.ARCHIVE_DIR }}.tar.gz

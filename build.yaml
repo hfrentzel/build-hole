@@ -1,6 +1,7 @@
 envs:
   - aarch64-linux-22.04
   - x86_64-linux-22.04
+  - x86_64-windows
 apps:
   bat:
     type: cargo
@@ -81,6 +82,9 @@ apps:
     type: custom
     repo: LuaLS/lua-language-server
     version: 3.14.0
+    exclude:
+      - x86_64-windows
+    recurse: true
     package: |
       sudo apt install ninja-build
       PLATFORM=$([ $GOARCH = amd64 ] && echo linux-x64 || echo linux-arm64)
@@ -95,6 +99,8 @@ apps:
     exe_name: nvim
     version: 0.11.0
     tag: v{version}
+    exclude:
+      - x86_64-windows
     package: |
       ./.github/scripts/install_deps.sh
       CMAKE_BUILD_TYPE=Release
@@ -129,6 +135,8 @@ apps:
     type: custom
     repo: tmux/tmux
     version: '3.3'
+    exclude:
+      - x86_64-windows
     package: |
       sudo apt install -y libevent-dev ncurses-dev build-essential bison \
         pkg-config autoconf automake
@@ -144,14 +152,16 @@ apps:
     version: 4.45.1
     tag: v{version}
     package: |
-      sudo apt install pandoc -y
-      mkdir -p $ARCHIVE_DIR/share/man/man1
-      ./scripts/generate-man-page-md.sh
-      pandoc --standalone --to man --variable=title:"YQ" \
-            --variable=section:"1" \
-            --variable=header:"yq (https://github.com/mikefarah/yq/) version $VERSION" \
-            --variable=author:"Mike Farah" \
-            --output=$ARCHIVE_DIR/share/man/man1/yq.1 man.md
+      if [ $GOOS == "linux" ]; then
+        sudo apt install pandoc -y
+        mkdir -p $ARCHIVE_DIR/share/man/man1
+        ./scripts/generate-man-page-md.sh
+        pandoc --standalone --to man --variable=title:"YQ" \
+              --variable=section:"1" \
+              --variable=header:"yq (https://github.com/mikefarah/yq/) version $VERSION" \
+              --variable=author:"Mike Farah" \
+              --output=$ARCHIVE_DIR/share/man/man1/yq.1 man.md
+      fi
   zoxide:
     type: cargo
     repo: ajeetdsouza/zoxide
