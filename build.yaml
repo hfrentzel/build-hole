@@ -99,8 +99,6 @@ apps:
     exe_name: nvim
     version: 0.11.0
     tag: v{version}
-    exclude:
-      - x86_64-windows
     package: |
       ./.github/scripts/install_deps.sh
       CMAKE_BUILD_TYPE=Release
@@ -108,6 +106,11 @@ apps:
       ./scripts/genappimage.sh
       cpack --config build/CPackConfig.cmake -G TGZ
       tar -xzf build/nvim-linux-$ARCH.tar.gz -C $ARCHIVE_DIR --strip-components 1
+    package_windows: |
+      curl -LO https://github.com/neovim/neovim/releases/download/v$VERSION/nvim-win64.zip
+      unzip nvim-win64.zip
+      rm -r $ARCHIVE_DIR
+      mv nvim-win64 $ARCHIVE_DIR
   ripgrep:
     type: cargo
     repo: burntsushi/ripgrep

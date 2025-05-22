@@ -46,6 +46,8 @@ def add_to_missing(name, spec, env):
         missing_spec["exe_name"] = spec["exe_name"]
     if spec.get("package"):
         missing_spec["package"] = spec["package"]
+    if spec.get("package_windows") and env == "x86_64-windows":
+        missing_spec["package"] = spec["package_windows"]
     if spec.get("tag"):
         missing_spec["tag"] = spec["tag"].format(version=spec["version"])
     if spec.get("flags"):
