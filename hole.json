@@ -137,7 +137,8 @@
     },
     "0.11.0": {
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/neovim_0.11.0_aarch64-linux-22.04.tar.gz",
-      "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/neovim_0.11.0_x86_64-linux-22.04.tar.gz"
+      "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/neovim_0.11.0_x86_64-linux-22.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-22T0142/neovim_0.11.0_x86_64-windows.tar.gz"
     }
   },
   "jira": {
