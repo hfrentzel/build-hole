@@ -111,6 +111,21 @@ apps:
       unzip nvim-win64.zip
       rm -r $ARCHIVE_DIR
       mv nvim-win64 $ARCHIVE_DIR
+  node:
+    type: custom
+    repo: nodejs/node
+    version: 22.14.0
+    tag: v{version}
+    package: |
+      [[ $(arch) = x86_64 ]] && ARCH="x64" || ARCH="arm64"
+      curl -LO https://nodejs.org/dist/v$VERSION/node-v$VERSION-linux-$ARCH.tar.xz
+      tar -xf node-v$VERSION-linux-$ARCH.tar.xz -C $ARCHIVE_DIR --strip-components 1
+    package_windows: |
+      curl -L https://nodejs.org/dist/v$VERSION/node-v$VERSION-win-x64.zip -o node.zip
+      unzip node.zip
+      mkdir $ARCHIVE_DIR/share
+      mv node-v$VERSION-win-x64 $ARCHIVE_DIR/share/node
+      cp $ARCHIVE_DIR/share/node/node.exe $ARCHIVE_DIR/bin/
   ripgrep:
     type: cargo
     repo: burntsushi/ripgrep
