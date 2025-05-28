@@ -126,6 +126,14 @@ apps:
       mkdir $ARCHIVE_DIR/share
       mv node-v$VERSION-win-x64 $ARCHIVE_DIR/share/node
       cp $ARCHIVE_DIR/share/node/node.exe $ARCHIVE_DIR/bin/
+  nushell:
+    type: cargo
+    repo: nushell/nushell
+    version: 0.104.0
+    exe_name: nu
+    flags: --features=static-link-openssl
+    prebuild_linux: |
+      sudo apt install -y pkg-config libssl-dev build-essential musl-tools
   ripgrep:
     type: cargo
     repo: burntsushi/ripgrep
