@@ -179,5 +179,12 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/lua-language-server_3.14.0_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/lua-language-server_3.14.0_x86_64-linux-22.04.tar.gz"
     }
+  },
+  "node": {
+    "22.14.0": {
+      "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-28T0131/node_22.14.0_aarch64-linux-22.04.tar.gz",
+      "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-28T0131/node_22.14.0_x86_64-linux-22.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-28T0131/node_22.14.0_x86_64-windows.tar.gz"
+    }
   }
 }
