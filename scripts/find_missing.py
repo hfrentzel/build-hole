@@ -65,6 +65,8 @@ def add_to_missing(name, spec, env):
         missing_spec["working_dir"] = spec["working-directory"]
     if spec.get("recurse"):
         missing_spec["recurse"] = spec["recurse"]
+    if not spec.get("no_verify"):
+        missing_spec["verify"] = True
 
     missing.append(missing_spec)
 
