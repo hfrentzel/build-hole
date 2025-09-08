@@ -117,6 +117,7 @@ jobs:
         run: ${{ matrix.package }}
 
       - name: Verify Binary
+        if: ${{ matrix.verify }}
         shell: bash
         run: |
           filename=${{ matrix.exe_name || matrix.name }}
