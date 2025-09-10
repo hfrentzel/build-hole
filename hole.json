@@ -194,5 +194,11 @@
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-29T0034/nushell_0.104.0_x86_64-linux-22.04.tar.gz",
       "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-29T0034/nushell_0.104.0_x86_64-windows.tar.gz"
     }
+  },
+  "clangd": {
+    "20.1.8": {
+      "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-09-10T0148/clangd_20.1.8_x86_64-linux-22.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-09-10T0148/clangd_20.1.8_x86_64-windows.tar.gz"
+    }
   }
 }
