@@ -13,6 +13,22 @@ apps:
       mkdir -p $ARCHIVE_DIR/share/bash-completion/completions
       cp target/$TARGET/release/build/bat-*/out/assets/manual/bat.1 $ARCHIVE_DIR/share/man/man1/bat.1 
       cp target/$TARGET/release/build/bat-*/out/assets/completions/bat.bash $ARCHIVE_DIR/share/bash-completion/completions/bat.bash
+  clangd:
+    type: custom
+    repo: clangd/clangd
+    version: 20.1.8
+    exclude:
+      - aarch64-linux-22.04
+    package: |
+      curl -LO https://github.com/clangd/clangd/releases/download/$VERSION/clangd-linux-$VERSION.zip
+      unzip clangd-linux-$VERSION.zip
+      rm -r $ARCHIVE_DIR
+      mv clangd_$VERSION $ARCHIVE_DIR
+    package_windows: |
+      curl -LO https://github.com/clangd/clangd/releases/download/$VERSION/clangd-windows-$VERSION.zip
+      unzip clangd-windows-$VERSION.zip
+      rm -r $ARCHIVE_DIR
+      mv clangd_$VERSION $ARCHIVE_DIR
   delta:
     type: cargo
     repo: dandavison/delta
