@@ -12,7 +12,9 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-02-25T1741/bat_0.25.0_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-02-25T1741/bat_0.25.0_x86_64-linux-20.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/bat_0.25.0_x86_64-linux-22.04.tar.gz",
-      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/bat_0.25.0_x86_64-windows.tar.gz"
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/bat_0.25.0_x86_64-windows.tar.gz",
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/bat_0.25.0_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/bat_0.25.0_x86_64-linux-24.04.tar.gz"
     }
   },
   "ripgrep": {
@@ -24,7 +26,9 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/ripgrep_14.1.1_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/ripgrep_14.1.1_x86_64-linux-20.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/ripgrep_14.1.1_x86_64-linux-22.04.tar.gz",
-      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/ripgrep_14.1.1_x86_64-windows.tar.gz"
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/ripgrep_14.1.1_x86_64-windows.tar.gz",
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/ripgrep_14.1.1_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/ripgrep_14.1.1_x86_64-linux-24.04.tar.gz"
     }
   },
   "delta": {
@@ -36,7 +40,9 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/delta_0.18.2_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/delta_0.18.2_x86_64-linux-20.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/delta_0.18.2_x86_64-linux-22.04.tar.gz",
-      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/delta_0.18.2_x86_64-windows.tar.gz"
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/delta_0.18.2_x86_64-windows.tar.gz",
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/delta_0.18.2_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/delta_0.18.2_x86_64-linux-24.04.tar.gz"
     }
   },
   "fd": {
@@ -48,7 +54,9 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/fd_10.2.0_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-14T1559/fd_10.2.0_x86_64-linux-20.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/fd_10.2.0_x86_64-linux-22.04.tar.gz",
-      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/fd_10.2.0_x86_64-windows.tar.gz"
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/fd_10.2.0_x86_64-windows.tar.gz",
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/fd_10.2.0_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/fd_10.2.0_x86_64-linux-24.04.tar.gz"
     }
   },
   "zoxide": {
@@ -65,6 +73,11 @@
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-02-25T1741/zoxide_0.9.7_x86_64-linux-20.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/zoxide_0.9.7_x86_64-linux-22.04.tar.gz",
       "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/zoxide_0.9.7_x86_64-windows.tar.gz"
+    },
+    "0.9.8": {
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/zoxide_0.9.8_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/zoxide_0.9.8_x86_64-linux-24.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/zoxide_0.9.8_x86_64-windows.tar.gz"
     }
   },
   "selene": {
@@ -88,7 +101,9 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-02-25T1741/stylua_2.0.2_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-02-25T1741/stylua_2.0.2_x86_64-linux-20.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/stylua_2.0.2_x86_64-linux-22.04.tar.gz",
-      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/stylua_2.0.2_x86_64-windows.tar.gz"
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/stylua_2.0.2_x86_64-windows.tar.gz",
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/stylua_2.0.2_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/stylua_2.0.2_x86_64-linux-24.04.tar.gz"
     }
   },
   "fzf": {
@@ -104,7 +119,9 @@
     "0.61.1": {
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/fzf_0.61.1_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/fzf_0.61.1_x86_64-linux-22.04.tar.gz",
-      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/fzf_0.61.1_x86_64-windows.tar.gz"
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/fzf_0.61.1_x86_64-windows.tar.gz",
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/fzf_0.61.1_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/fzf_0.61.1_x86_64-linux-24.04.tar.gz"
     }
   },
   "yq": {
@@ -116,14 +133,18 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1435/yq_4.45.1_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1435/yq_4.45.1_x86_64-linux-20.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/yq_4.45.1_x86_64-linux-22.04.tar.gz",
-      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/yq_4.45.1_x86_64-windows.tar.gz"
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/yq_4.45.1_x86_64-windows.tar.gz",
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/yq_4.45.1_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/yq_4.45.1_x86_64-linux-24.04.tar.gz"
     }
   },
   "tmux": {
     "3.3": {
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2024-10-10T1735/tmux_3.3_x86_64-linux-20.04.tar.gz",
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1935/tmux_3.3_aarch64-linux-22.04.tar.gz",
-      "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/tmux_3.3_x86_64-linux-22.04.tar.gz"
+      "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/tmux_3.3_x86_64-linux-22.04.tar.gz",
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/tmux_3.3_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/tmux_3.3_x86_64-linux-24.04.tar.gz"
     }
   },
   "neovim": {
@@ -146,7 +167,9 @@
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1435/jira_1.5.2_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1435/jira_1.5.2_x86_64-linux-20.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/jira_1.5.2_x86_64-linux-22.04.tar.gz",
-      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/jira_1.5.2_x86_64-windows.tar.gz"
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/jira_1.5.2_x86_64-windows.tar.gz",
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/jira_1.5.2_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/jira_1.5.2_x86_64-linux-24.04.tar.gz"
     }
   },
   "golangci-lint": {
@@ -158,7 +181,9 @@
     "2.0.2": {
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/golangci-lint_2.0.2_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/golangci-lint_2.0.2_x86_64-linux-22.04.tar.gz",
-      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/golangci-lint_2.0.2_x86_64-windows.tar.gz"
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/golangci-lint_2.0.2_x86_64-windows.tar.gz",
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/golangci-lint_2.0.2_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/golangci-lint_2.0.2_x86_64-linux-24.04.tar.gz"
     }
   },
   "gopls": {
@@ -167,6 +192,11 @@
       "x86_64-linux-20.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-05T1812/gopls_0.18.1_x86_64-linux-20.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-03-06T2223/gopls_0.18.1_x86_64-linux-22.04.tar.gz",
       "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/gopls_0.18.1_x86_64-windows.tar.gz"
+    },
+    "0.20.0": {
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/gopls_0.20.0_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/gopls_0.20.0_x86_64-linux-24.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/gopls_0.20.0_x86_64-windows.tar.gz"
     }
   },
   "lua-language-server": {
@@ -178,27 +208,34 @@
     "3.14.0": {
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/lua-language-server_3.14.0_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-08T2140/lua-language-server_3.14.0_x86_64-linux-22.04.tar.gz",
-      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-09-08T0226/lua-language-server_3.14.0_x86_64-windows.tar.gz"
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-09-08T0226/lua-language-server_3.14.0_x86_64-windows.tar.gz",
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/lua-language-server_3.14.0_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/lua-language-server_3.14.0_x86_64-linux-24.04.tar.gz"
     }
   },
   "node": {
     "22.14.0": {
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-28T0131/node_22.14.0_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-28T0131/node_22.14.0_x86_64-linux-22.04.tar.gz",
-      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-28T0131/node_22.14.0_x86_64-windows.tar.gz"
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-28T0131/node_22.14.0_x86_64-windows.tar.gz",
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/node_22.14.0_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/node_22.14.0_x86_64-linux-24.04.tar.gz"
     }
   },
   "nushell": {
     "0.104.0": {
       "aarch64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-29T0034/nushell_0.104.0_aarch64-linux-22.04.tar.gz",
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-29T0034/nushell_0.104.0_x86_64-linux-22.04.tar.gz",
-      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-29T0034/nushell_0.104.0_x86_64-windows.tar.gz"
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-29T0034/nushell_0.104.0_x86_64-windows.tar.gz",
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/nushell_0.104.0_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/nushell_0.104.0_x86_64-linux-24.04.tar.gz"
     }
   },
   "clangd": {
     "20.1.8": {
       "x86_64-linux-22.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-09-10T0148/clangd_20.1.8_x86_64-linux-22.04.tar.gz",
-      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-09-10T0148/clangd_20.1.8_x86_64-windows.tar.gz"
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-09-10T0148/clangd_20.1.8_x86_64-windows.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/clangd_20.1.8_x86_64-linux-24.04.tar.gz"
     }
   }
 }
