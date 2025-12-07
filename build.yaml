@@ -1,6 +1,6 @@
 envs:
-  - aarch64-linux-22.04
-  - x86_64-linux-22.04
+  - aarch64-linux-24.04
+  - x86_64-linux-24.04
   - x86_64-windows
 apps:
   bat:
@@ -18,7 +18,7 @@ apps:
     repo: clangd/clangd
     version: 20.1.8
     exclude:
-      - aarch64-linux-22.04
+      - aarch64-linux-24.04
     package: |
       curl -LO https://github.com/clangd/clangd/releases/download/$VERSION/clangd-linux-$VERSION.zip
       unzip clangd-linux-$VERSION.zip
@@ -74,7 +74,7 @@ apps:
   gopls:
     type: go
     repo: golang/tools
-    version: 0.18.1
+    version: 0.20.0
     tag: gopls/v{version}
     working-directory: gopls
     flags:
@@ -119,6 +119,9 @@ apps:
     exe_name: nvim
     version: 0.11.0
     tag: v{version}
+    exclude:
+      - aarch64-linux-24.04
+      - x86_64-linux-24.04
     package: |
       ./.github/scripts/install_deps.sh
       CMAKE_BUILD_TYPE=Release
@@ -152,8 +155,6 @@ apps:
     version: 0.104.0
     exe_name: nu
     flags: --features=static-link-openssl
-    prebuild_linux: |
-      sudo apt install -y pkg-config musl-tools
   ripgrep:
     type: cargo
     repo: burntsushi/ripgrep
@@ -172,6 +173,9 @@ apps:
     repo: kampfkarren/selene
     version: 0.28.0
     flags: --no-default-features
+    exclude:
+      - aarch64-linux-24.04
+      - x86_64-linux-24.04
   stylua:
     type: cargo
     repo: johnnymorganz/stylua
@@ -211,7 +215,7 @@ apps:
   zoxide:
     type: cargo
     repo: ajeetdsouza/zoxide
-    version: 0.9.7
+    version: 0.9.8
     tag: v{version}
     package: |
       mkdir -p $ARCHIVE_DIR/share/bash-completion/completions 

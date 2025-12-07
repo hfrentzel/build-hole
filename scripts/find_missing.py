@@ -23,14 +23,14 @@ def add_to_missing(name, spec, env):
         "version": spec["version"],
         "env": env,
     }
-    if env == "aarch64-linux-22.04":
-        missing_spec["runner"] = "ubuntu-22.04-arm"
+    if env == "aarch64-linux-24.04":
+        missing_spec["runner"] = "ubuntu-24.04-arm"
         missing_spec["goos"] = "linux"
         missing_spec["goarch"] = "arm64"
         if spec["type"] == "cargo":
             missing_spec["target"] = "aarch64-unknown-linux-gnu"
-    elif env == "x86_64-linux-22.04":
-        missing_spec["runner"] = "ubuntu-22.04"
+    elif env == "x86_64-linux-24.04":
+        missing_spec["runner"] = "ubuntu-24.04"
         missing_spec["goos"] = "linux"
         missing_spec["goarch"] = "amd64"
         if spec["type"] == "cargo":
