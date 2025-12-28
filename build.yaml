@@ -6,7 +6,7 @@ apps:
   bat:
     type: cargo
     repo: sharkdp/bat
-    version: 0.25.0
+    version: 0.26.1
     tag: v{version}
     package: |
       mkdir -p $ARCHIVE_DIR/share/man/man1
@@ -36,7 +36,7 @@ apps:
   fd:
     type: cargo
     repo: sharkdp/fd
-    version: 10.2.0 
+    version: 10.3.0 
     tag: v{version}
     package: |
       mkdir -p $ARCHIVE_DIR/share/man/man1
@@ -158,7 +158,7 @@ apps:
   ripgrep:
     type: cargo
     repo: burntsushi/ripgrep
-    version: 14.1.1
+    version: 15.1.0
     exe_name: rg
     flags: --features=pcre2
     package: |
@@ -171,15 +171,12 @@ apps:
   selene:
     type: cargo
     repo: kampfkarren/selene
-    version: 0.28.0
+    version: 0.29.0
     flags: --no-default-features
-    exclude:
-      - aarch64-linux-24.04
-      - x86_64-linux-24.04
   stylua:
     type: cargo
     repo: johnnymorganz/stylua
-    version: 2.0.2
+    version: 2.3.1
     tag: v{version}
   tmux:
     type: custom
