@@ -47,7 +47,7 @@ apps:
   fzf:
     type: go
     repo: junegunn/fzf
-    version: 0.61.1
+    version: 0.67.0
     tag: v{version}
     flags:
       - -X main.version={{ .Version }}
