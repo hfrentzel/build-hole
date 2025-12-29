@@ -147,6 +147,11 @@
       "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/fzf_0.61.1_x86_64-windows.tar.gz",
       "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/fzf_0.61.1_aarch64-linux-24.04.tar.gz",
       "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/fzf_0.61.1_x86_64-linux-24.04.tar.gz"
+    },
+    "0.67.0": {
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-29T0009/fzf_0.67.0_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-29T0009/fzf_0.67.0_x86_64-linux-24.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-29T0009/fzf_0.67.0_x86_64-windows.tar.gz"
     }
   },
   "yq": {
