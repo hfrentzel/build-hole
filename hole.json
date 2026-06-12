@@ -53,6 +53,11 @@
       "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-04-10T1652/delta_0.18.2_x86_64-windows.tar.gz",
       "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/delta_0.18.2_aarch64-linux-24.04.tar.gz",
       "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/delta_0.18.2_x86_64-linux-24.04.tar.gz"
+    },
+    "0.19.2": {
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/delta_0.19.2_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/delta_0.19.2_x86_64-linux-24.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/delta_0.19.2_x86_64-windows.tar.gz"
     }
   },
   "fd": {
@@ -72,6 +77,11 @@
       "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-28T2316/fd_10.3.0_aarch64-linux-24.04.tar.gz",
       "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-28T2316/fd_10.3.0_x86_64-linux-24.04.tar.gz",
       "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-28T2316/fd_10.3.0_x86_64-windows.tar.gz"
+    },
+    "10.4.2": {
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/fd_10.4.2_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/fd_10.4.2_x86_64-linux-24.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/fd_10.4.2_x86_64-windows.tar.gz"
     }
   },
   "zoxide": {
@@ -93,6 +103,11 @@
       "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/zoxide_0.9.8_aarch64-linux-24.04.tar.gz",
       "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/zoxide_0.9.8_x86_64-linux-24.04.tar.gz",
       "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/zoxide_0.9.8_x86_64-windows.tar.gz"
+    },
+    "0.9.9": {
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/zoxide_0.9.9_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/zoxide_0.9.9_x86_64-linux-24.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/zoxide_0.9.9_x86_64-windows.tar.gz"
     }
   },
   "selene": {
@@ -110,6 +125,11 @@
       "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-28T2316/selene_0.29.0_aarch64-linux-24.04.tar.gz",
       "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-28T2316/selene_0.29.0_x86_64-linux-24.04.tar.gz",
       "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-28T2316/selene_0.29.0_x86_64-windows.tar.gz"
+    },
+    "0.31.0": {
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/selene_0.31.0_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/selene_0.31.0_x86_64-linux-24.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/selene_0.31.0_x86_64-windows.tar.gz"
     }
   },
   "stylua": {
@@ -129,6 +149,11 @@
       "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-28T2316/stylua_2.3.1_aarch64-linux-24.04.tar.gz",
       "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-28T2316/stylua_2.3.1_x86_64-linux-24.04.tar.gz",
       "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-28T2316/stylua_2.3.1_x86_64-windows.tar.gz"
+    },
+    "2.5.2": {
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/stylua_2.5.2_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/stylua_2.5.2_x86_64-linux-24.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/stylua_2.5.2_x86_64-windows.tar.gz"
     }
   },
   "fzf": {
@@ -152,6 +177,11 @@
       "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-29T0009/fzf_0.67.0_aarch64-linux-24.04.tar.gz",
       "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-29T0009/fzf_0.67.0_x86_64-linux-24.04.tar.gz",
       "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-29T0009/fzf_0.67.0_x86_64-windows.tar.gz"
+    },
+    "0.73.1": {
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/fzf_0.73.1_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/fzf_0.73.1_x86_64-linux-24.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/fzf_0.73.1_x86_64-windows.tar.gz"
     }
   },
   "yq": {
@@ -241,6 +271,11 @@
       "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-09-08T0226/lua-language-server_3.14.0_x86_64-windows.tar.gz",
       "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/lua-language-server_3.14.0_aarch64-linux-24.04.tar.gz",
       "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/lua-language-server_3.14.0_x86_64-linux-24.04.tar.gz"
+    },
+    "3.18.2": {
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/lua-language-server_3.18.2_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/lua-language-server_3.18.2_x86_64-linux-24.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2026-06-12T0033/lua-language-server_3.18.2_x86_64-windows.tar.gz"
     }
   },
   "node": {
