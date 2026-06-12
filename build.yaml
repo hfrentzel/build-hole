@@ -32,11 +32,11 @@ apps:
   delta:
     type: cargo
     repo: dandavison/delta
-    version: 0.18.2
+    version: 0.19.2
   fd:
     type: cargo
     repo: sharkdp/fd
-    version: 10.3.0 
+    version: 10.4.2
     tag: v{version}
     package: |
       mkdir -p $ARCHIVE_DIR/share/man/man1
@@ -47,16 +47,16 @@ apps:
   fzf:
     type: go
     repo: junegunn/fzf
-    version: 0.67.0
+    version: 0.73.1
     tag: v{version}
     flags:
       - -X main.version={{ .Version }}
       - -X main.revision={{ .ShortCommit }}
     package: |
-      mkdir $ARCHIVE_DIR/share
-      mkdir $ARCHIVE_DIR/shell
+      mkdir -p $ARCHIVE_DIR/share/fzf
       cp -r man/ $ARCHIVE_DIR/share
-      cp shell/completion.bash $ARCHIVE_DIR/shell/fzf.sh
+      cp shell/completion.bash $ARCHIVE_DIR/share/fzf/completion.sh
+      cp shell/completion.nu $ARCHIVE_DIR/share/fzf/completion.nu
   golangci-lint:
     type: go
     repo: golangci/golangci-lint
@@ -97,12 +97,13 @@ apps:
   lua-language-server:
     type: custom
     repo: LuaLS/lua-language-server
-    version: 3.14.0
+    version: 3.18.2
     recurse: true
     no_verify: true
     package: |
       sudo apt install ninja-build
       PLATFORM=$([ $GOARCH = amd64 ] && echo linux-x64 || echo linux-arm64)
+      chmod +x make.sh
       ./make.sh $PLATFORM
       echo -e '#!/bin/bash\nexec "~/.local/share/lua/bin/lua-language-server" "$@"' > $ARCHIVE_DIR/bin/lua-language-server
       chmod +x $ARCHIVE_DIR/bin/lua-language-server
@@ -171,12 +172,12 @@ apps:
   selene:
     type: cargo
     repo: kampfkarren/selene
-    version: 0.29.0
+    version: 0.31.0
     flags: --no-default-features
   stylua:
     type: cargo
     repo: johnnymorganz/stylua
-    version: 2.3.1
+    version: 2.5.2
     tag: v{version}
   tmux:
     type: custom
@@ -212,7 +213,7 @@ apps:
   zoxide:
     type: cargo
     repo: ajeetdsouza/zoxide
-    version: 0.9.8
+    version: 0.9.9
     tag: v{version}
     package: |
       mkdir -p $ARCHIVE_DIR/share/bash-completion/completions 
