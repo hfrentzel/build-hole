@@ -118,7 +118,7 @@ apps:
     type: custom
     repo: neovim/neovim
     exe_name: nvim
-    version: 0.11.0
+    version: 0.12.3
     tag: v{version}
     exclude:
       - aarch64-linux-24.04
