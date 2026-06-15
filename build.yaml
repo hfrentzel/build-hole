@@ -120,14 +120,11 @@ apps:
     exe_name: nvim
     version: 0.12.3
     tag: v{version}
-    exclude:
-      - aarch64-linux-24.04
-      - x86_64-linux-24.04
     package: |
       ./.github/scripts/install_deps.sh
       CMAKE_BUILD_TYPE=Release
       [[ $(arch) = x86_64 ]] && ARCH="x86_64" || ARCH="arm64"
-      ./scripts/genappimage.sh
+      bash -x ./scripts/genappimage.sh
       cpack --config build/CPackConfig.cmake -G TGZ
       tar -xzf build/nvim-linux-$ARCH.tar.gz -C $ARCHIVE_DIR --strip-components 1
     package_windows: |
