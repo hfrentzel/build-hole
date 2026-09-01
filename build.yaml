@@ -36,7 +36,7 @@ apps:
   fd:
     type: cargo
     repo: sharkdp/fd
-    version: 10.4.2
+    version: 10.5.0
     tag: v{version}
     package: |
       mkdir -p $ARCHIVE_DIR/share/man/man1
@@ -47,7 +47,7 @@ apps:
   fzf:
     type: go
     repo: junegunn/fzf
-    version: 0.73.1
+    version: 0.74.3
     tag: v{version}
     flags:
       - -X main.version={{ .Version }}
@@ -97,7 +97,7 @@ apps:
   lua-language-server:
     type: custom
     repo: LuaLS/lua-language-server
-    version: 3.18.2
+    version: 3.19.1
     recurse: true
     no_verify: true
     package: |
@@ -156,7 +156,7 @@ apps:
   ripgrep:
     type: cargo
     repo: burntsushi/ripgrep
-    version: 15.1.0
+    version: 15.2.0
     exe_name: rg
     flags: --features=pcre2
     package: |
@@ -210,7 +210,7 @@ apps:
   zoxide:
     type: cargo
     repo: ajeetdsouza/zoxide
-    version: 0.9.9
+    version: 0.10.0
     tag: v{version}
     package: |
       mkdir -p $ARCHIVE_DIR/share/bash-completion/completions 
