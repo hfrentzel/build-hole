@@ -49,9 +49,9 @@ jobs:
 
       - name: Install go
         if: ${{ matrix.type == 'go' }}
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with: 
-          go-version: '^1.23'
+          go-version: '^1.27'
 
       - name: Override goreleaser file
         if: ${{ matrix.type == 'go' }}
@@ -77,7 +77,7 @@ jobs:
           cat .goreleaser.yml
 
       - name: Build Go Binary
-        uses: goreleaser/goreleaser-action@v6
+        uses: goreleaser/goreleaser-action@v7
         if: ${{ matrix.type == 'go' }}
         with:
           workdir: ${{ matrix.working_dir || '.' }}
@@ -137,7 +137,7 @@ jobs:
           tar -tf $ARCHIVE_DIR.tar.gz
 
       - name: Upload tarball
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: ${{ matrix.os != 'windows-latest' }}
         with:
           name: ${{ env.ARCHIVE_DIR }}.tar.gz
@@ -156,7 +156,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Retrieve artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           merge-multiple: true
           path: artifacts

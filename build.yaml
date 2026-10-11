@@ -32,7 +32,7 @@ apps:
   delta:
     type: cargo
     repo: dandavison/delta
-    version: 0.19.2
+    version: 0.20.1
   fd:
     type: cargo
     repo: sharkdp/fd
@@ -47,7 +47,7 @@ apps:
   fzf:
     type: go
     repo: junegunn/fzf
-    version: 0.74.3
+    version: 0.74.5
     tag: v{version}
     flags:
       - -X main.version={{ .Version }}
@@ -169,12 +169,12 @@ apps:
   selene:
     type: cargo
     repo: kampfkarren/selene
-    version: 0.31.0
+    version: 0.32.0
     flags: --no-default-features
   stylua:
     type: cargo
     repo: johnnymorganz/stylua
-    version: 2.5.2
+    version: 2.6.0
     tag: v{version}
   tmux:
     type: custom
