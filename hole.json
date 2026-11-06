@@ -335,6 +335,11 @@
       "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2025-05-28T0131/node_22.14.0_x86_64-windows.tar.gz",
       "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/node_22.14.0_aarch64-linux-24.04.tar.gz",
       "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2025-12-07T1823/node_22.14.0_x86_64-linux-24.04.tar.gz"
+    },
+    "24.22.2": {
+      "aarch64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-11-06T2044/node_24.22.2_aarch64-linux-24.04.tar.gz",
+      "x86_64-linux-24.04": "https://github.com/hfrentzel/build-hole/releases/download/2026-11-06T2044/node_24.22.2_x86_64-linux-24.04.tar.gz",
+      "x86_64-windows": "https://github.com/hfrentzel/build-hole/releases/download/2026-11-06T2044/node_24.22.2_x86_64-windows.tar.gz"
     }
   },
   "nushell": {
