@@ -135,7 +135,7 @@ apps:
   node:
     type: custom
     repo: nodejs/node
-    version: 22.14.0
+    version: 24.22.2
     tag: v{version}
     package: |
       [[ $(arch) = x86_64 ]] && ARCH="x64" || ARCH="arm64"
