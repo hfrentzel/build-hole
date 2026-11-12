@@ -36,7 +36,7 @@ apps:
   fd:
     type: cargo
     repo: sharkdp/fd
-    version: 10.5.0
+    version: 10.5.2
     tag: v{version}
     package: |
       mkdir -p $ARCHIVE_DIR/share/man/man1
@@ -47,7 +47,7 @@ apps:
   fzf:
     type: go
     repo: junegunn/fzf
-    version: 0.74.5
+    version: 0.75.0
     tag: v{version}
     flags:
       - -X main.version={{ .Version }}
@@ -97,7 +97,7 @@ apps:
   lua-language-server:
     type: custom
     repo: LuaLS/lua-language-server
-    version: 3.19.1
+    version: 3.19.2
     recurse: true
     no_verify: true
     package: |
